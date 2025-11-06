@@ -1,0 +1,5 @@
+1 John Doe 01/01/1990 M 123_Main_St 555-5555 john@example.com ID123
+
+2 t b 0000-01-01 m aaah 1234 5678@90 1234567890 
+3 Nik Adams 2005-10-11 Malew 180 North 814- nik@g.com 1 
+4 Nikk Adams 2005-10-10 male 180 north 8 nikk@a.com 1 

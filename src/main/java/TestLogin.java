@@ -6,8 +6,8 @@ public class TestLogin{
 
 
         System.out.println("=== TEST 1: correct acc/pass ===");
-        int accNo1 = 1;          // must match a line in db/credentials.txt
-        String pass1 = "pass";   // must match that same line's password
+        int accNo1 = 1;
+        String pass1 = "pass";
         login.loginAuth(accNo1, pass1);
 
 

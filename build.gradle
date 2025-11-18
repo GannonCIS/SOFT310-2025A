@@ -11,13 +11,13 @@ repositories { mavenCentral() }
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.0.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.0.1'
 }
 
 test { useJUnitPlatform() }
 
 application {
-    // If Main.java has *no* package, keep 'Main'
-    // If it *does* have a package, use 'your.package.Main'
     mainClass = 'Main'
 }
 

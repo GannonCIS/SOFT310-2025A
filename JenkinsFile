@@ -17,7 +17,7 @@ pipeline {
             }
             post{
                     always {
-                        junit 'test-results/test/*.xml'
+                        junit 'test-results/reports/tests/test/**/*.xml'
                         publishHTML([
                         reportDir: 'build/reports/tests/test',
                         reportFiles: 'index.html',

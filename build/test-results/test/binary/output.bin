@@ -14,3 +14,36 @@
 L---------------------------------------------------------------------------
 JTest Transaction One  | DEBIT  | $100   | OK      | 2025-11-22 | 12:00   
 L---------------------------------------------------------------------------
+*Are you sure want to delete your account?
+Type 1: Yes
+Type 2: No
+(Incorrect! Choose a valid option again.
+
+*Are you sure want to delete your account?
+Type 1: Yes
+Type 2: No
+*Are you sure want to delete your account?
+Type 1: Yes
+Type 2: No
+(Incorrect! Choose a valid option again.
+
+*Are you sure want to delete your account?
+Type 1: Yes
+Type 2: No
+*Are you sure want to delete your account?
+Type 1: Yes
+Type 2: No
+	*Are you sure want to delete your account?
+	Type 1: Yes
+	Type 2: No
+	[┌────────────────────────────┐
+	#│           Menu:            │
+	#│                            │
+	#│ Type 1: Balance Inquiry    │
+	#│ Type 2: Account Details    │
+	#│ Type 3: Fund Transfer      │
+	#│ Type 4: Bank Statement     │
+	#│ Type 5: Account Closure    │
+	#│ Type 6: Log out            │
+	#│ Type 7: Exit               │
+	[└────────────────────────────┘

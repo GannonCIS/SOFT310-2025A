@@ -7,13 +7,43 @@ import java.io.File;
 import java.util.NoSuchElementException;
 import static org.junit.Assert.fail;
 import java.io.FileWriter;
-import java.util.Scanner;
+
 
 @RunWith(MockitoJUnitRunner.class)
 public class DeletionTest {
 
+
+    /*
+    Testing for accCloseFun(int accNo, String fileName) of DELETION Class
+    1st BVA Test Written
+    Explanation - Range is very limited, min = 1 and max = 2
+             Robust Normal BVA: min-1,min,min+1,max,max-1,max+1,nominal
+              Since min = 1 and max = 2, min +1 = max and max-1 = min in this example
+              Instead of 7 test cases needed for full testing, only 4 are necessary
+              min+1 and max-1 are redundant and nominal is too due to the nature of the method
+     */
+
     @Test
-    public void testAccCloseFun_UserWantsToDeleteAcc_Types1() throws Exception {
+    public void testAccCloseFun_UserEntersNumberThatIsNot1_MinMinus1() throws Exception {
+        int accNo = 000;
+        String fileName = "zero.txt";
+
+        System.setIn(new ByteArrayInputStream("0\n".getBytes()));
+
+        Deletion deletion = Mockito.spy(new Deletion());
+
+        try {
+            deletion.accCloseFun(accNo, fileName);
+        } catch (NoSuchElementException e) {
+
+        }
+        Mockito.verify(deletion, Mockito.times(2)).accCloseFun(accNo, fileName);
+
+    }
+
+
+    @Test
+    public void testAccCloseFun_UserWantsToDeleteAcc_Types1_Min() throws Exception {
         int accNo = 100;
         String fileName = "onehundred.txt";
         System.setIn(new ByteArrayInputStream("1\n".getBytes()));
@@ -25,7 +55,7 @@ public class DeletionTest {
     }
 
     @Test
-    public void testAccCloseFun_UserDoesntWantToDeleteAcc_Types2() throws Exception {
+    public void testAccCloseFun_UserDoesntWantToDeleteAcc_Types2_Max() throws Exception {
         int accNo = 200;
         String fileName = "twohundred.txt";
         System.setIn(new ByteArrayInputStream("2\n".getBytes()));
@@ -43,7 +73,7 @@ public class DeletionTest {
     }
 
     @Test
-    public void testAccCloseFun_UserEntersNumberThatIsNot1_TypesAnyInt() throws Exception {
+    public void testAccCloseFun_UserEntersNumberThatIsNot1_MaxPlus1() throws Exception {
         int accNo = 300;
         String fileName = "threehundred.txt";
 
@@ -60,6 +90,14 @@ public class DeletionTest {
 
     }
 
+
+
+
+
+
+/*
+Testing for void delLine(int accNo, String fileName) in DELETION class
+ */
 
 @Test
     public void testDelLine_FileExists() throws Exception {

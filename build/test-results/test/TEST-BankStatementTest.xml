@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BankStatementTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-11-23T00:04:34.023Z" hostname="Nikkolass-MacBook-Pro.local" time="0.16">
+<testsuite name="BankStatementTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-11-24T16:34:34.017Z" hostname="Nikkolass-MacBook-Pro.local" time="0.153">
   <properties/>
-  <testcase name="testBankStatement_FileNotFound_CallsExitTwice" classname="BankStatementTest" time="0.151"/>
-  <testcase name="testBankStatement_FileIsEmpty_CallsExitOnce" classname="BankStatementTest" time="0.003"/>
+  <testcase name="testBankStatement_FileNotFound_CallsExitTwice" classname="BankStatementTest" time="0.143"/>
+  <testcase name="testBankStatement_FileIsEmpty_CallsExitOnce" classname="BankStatementTest" time="0.002"/>
   <testcase name="testBankStatement_FileIsNotEmpty_CallsExitOnce" classname="BankStatementTest" time="0.006"/>
   <system-out><![CDATA[No Transaction found!
 

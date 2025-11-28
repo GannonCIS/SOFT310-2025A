@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RahmanBank.iml" filepath="$PROJECT_DIR$/RahmanBank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RahmanBank.iml" filepath="$PROJECT_DIR$/.idea/modules/RahmanBank.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RahmanBank.main.iml" filepath="$PROJECT_DIR$/.idea/modules/RahmanBank.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RahmanBank.test.iml" filepath="$PROJECT_DIR$/.idea/modules/RahmanBank.test.iml" />
     </modules>

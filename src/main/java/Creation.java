@@ -6,19 +6,29 @@ import java.util.Scanner;
 
 public class Creation {
 
-    void createAccFun() throws IOException {
-        int accNo = accNoCreation();
+    // Original user-facing method (uses db/)
+    public void createAccFun() throws IOException {
+        int accNo = accNoCreation("db/credentials.txt");
         String[] accLineInfo = getUserInfoFromUser();
-        credWrite(accNo,accLineInfo);
-        balWrite(accNo);
-        userWrite(accNo, accLineInfo);
+        credWrite("db/credentials.txt", accNo, accLineInfo);
+        balWrite("db/balanceDB.txt", accNo);
+        userWrite("db/userDB.txt", accNo, accLineInfo);
         System.out.println("\nAccount created successfully!\n");
         System.out.println("Your account number is: " + accNo);
-        System.out.println("Your password is: " + accLineInfo[8]+ "\n");
+        System.out.println("Your password is: " + accLineInfo[8] + "\n");
         Main.menu(accNo);
     }
 
-    String[] getUserInfoFromUser() throws IOException {
+    // Test helper - minimal changes: accept file paths and userInfo array, returns accNo
+    public int createAccFunTest(String credPath, String userPath, String balPath, String[] accLineInfo) throws Exception {
+        int accNo = accNoCreation(credPath);
+        credWrite(credPath, accNo, accLineInfo);
+        balWrite(balPath, accNo);
+        userWrite(userPath, accNo, accLineInfo);
+        return accNo;
+    }
+
+    String[] getUserInfoFromUser () throws IOException {
         String[] accLineInfo = new String[9];
         Scanner scanner = new Scanner(System.in);
 
@@ -32,8 +42,6 @@ public class Creation {
             System.out.println("Please provide both first name and last name.");
             return getUserInfoFromUser();
         }
-        accLineInfo[0] = fullNameArr[0];
-        accLineInfo[1] = fullNameArr[1];
 
         System.out.println("Enter your Date of Birth (YYYY-MM-DD): ");
         accLineInfo[2] = scanner.nextLine();
@@ -50,17 +58,24 @@ public class Creation {
         System.out.println("Create a Password for your Account: ");
         accLineInfo[8] = scanner.nextLine();
         return accLineInfo;
-        }
+    }
 
-    int accNoCreation() throws IOException {
+    int accNoCreation (String credentialsPath) throws IOException {
         String lastLine = "";
         int accNo;
-        File file = new File("db/credentials.txt");
+        File file = new File(credentialsPath);
+        // create file if it doesn't exist so tests don't crash on read
+        file.getParentFile().mkdirs();
+        if (!file.exists()) file.createNewFile();
+
         Scanner scanner = new Scanner(file);
         while (scanner.hasNextLine()) {
-            lastLine = scanner.nextLine();
+            String line = scanner.nextLine();
+            if (!line.trim().isEmpty()) lastLine = line;
         }
-        if (Objects.equals(lastLine, "")) {
+        scanner.close();
+
+        if (Objects.equals(lastLine, "") || lastLine.trim().isEmpty()) {
             accNo = 1;
         } else {
             String[] subLine = lastLine.split(" ");
@@ -70,28 +85,34 @@ public class Creation {
         return accNo;
     }
 
-    void credWrite(int accNo, String[] accLineInfo) throws IOException {
-        FileWriter writer = new FileWriter("db/credentials.txt", true);
-        writer.write("\n" + accNo + " " + accLineInfo[8]);
+    void credWrite ( String credentialsPath, int accNo, String[] accLineInfo) throws IOException {
+        File file = new File(credentialsPath);
+        file.getParentFile().mkdirs();
+        FileWriter writer = new FileWriter(file, true);
+        if (file.length() == 0) writer.write(accNo + " " + accLineInfo[8]);
+        else writer.write("\n" + accNo + " " + accLineInfo[8]);
         writer.close();
     }
 
-    void balWrite(int accNo) throws IOException {
+    void balWrite ( String balPath, int accNo) throws IOException {
         int initialBal = 69;
-        FileWriter writer = new FileWriter("db/balanceDB.txt", true);
-        writer.write("\n" + accNo + " " + initialBal);
+        File file = new File(balPath);
+        file.getParentFile().mkdirs();
+        FileWriter writer = new FileWriter(file, true);
+        if (file.length() == 0) writer.write(accNo + " " + initialBal);
+        else writer.write("\n" + accNo + " " + initialBal);
         writer.close();
     }
 
-    void userWrite(int accNo, String[] accLineInfo) throws IOException {
-        FileWriter writer = new FileWriter("db/userDB.txt", true);
-        writer.write("\n" + accNo + " ");
+    void userWrite ( String userPath, int accNo, String[] accLineInfo) throws IOException {
+        File file = new File(userPath);
+        file.getParentFile().mkdirs();
+        FileWriter writer = new FileWriter(file, true);
+        if (file.length() == 0) writer.write(accNo + " ");
+        else writer.write("\n" + accNo + " ");
         for (int i = 0; i < 8; i++) {
             writer.write(accLineInfo[i] + " ");
         }
         writer.close();
     }
-
-
 }
-

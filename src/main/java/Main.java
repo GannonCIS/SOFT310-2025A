@@ -95,6 +95,4 @@ public class Main {
         System.out.println("\nAccount successfully Deleted.");
         System.exit(0);
     }
-
-
 }

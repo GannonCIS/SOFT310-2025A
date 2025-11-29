@@ -1,0 +1,15 @@
+e┌───────────────────────────────┐
+$  Your current balance is $5000   
+e└───────────────────────────────┘
+ Press Enter key to continue...
+\┌────────────────────────────┐
+$│           Menu:            │
+$│                            │
+$│ Type 1: Balance Inquiry    │
+$│ Type 2: Account Details    │
+$│ Type 3: Fund Transfer      │
+$│ Type 4: Bank Statement     │
+$│ Type 5: Account Closure    │
+$│ Type 6: Log out            │
+$│ Type 7: Exit               │
+\└────────────────────────────┘

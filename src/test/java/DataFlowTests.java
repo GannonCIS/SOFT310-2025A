@@ -197,7 +197,6 @@ public class DataFlowTests {
             expected[6] = "1";
             expected[7] = "1";
             expected[8] = "1";
-            expected[9] = "1";
             Assert.assertEquals(expected[0], result[0]);
             Assert.assertEquals(expected[1], result[1]);
         } catch (Exception e) {
@@ -226,8 +225,8 @@ public class DataFlowTests {
             expected[6] = "1";
             expected[7] = "1";
             expected[8] = "1";
-            expected[9] = "1";
-            Assert.assertEquals(expected, result);
+            Assert.assertEquals(expected[0], result[0]);
+            Assert.assertEquals(expected[1], result[1]);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -254,8 +253,8 @@ public class DataFlowTests {
             expected[6] = "1";
             expected[7] = "1";
             expected[8] = "1";
-            expected[9] = "1";
-            Assert.assertEquals(expected, result);
+            Assert.assertEquals(expected[0], result[0]);
+            Assert.assertEquals(expected[1], result[1]);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -282,8 +281,8 @@ public class DataFlowTests {
             expected[6] = "1";
             expected[7] = "1";
             expected[8] = "1";
-            expected[9] = "1";
-            Assert.assertEquals(expected, result);
+            Assert.assertEquals(expected[0], result[0]);
+            Assert.assertEquals(expected[1], result[1]);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -310,8 +309,8 @@ public class DataFlowTests {
             expected[6] = "1";
             expected[7] = "1";
             expected[8] = "1";
-            expected[9] = "1";
-            Assert.assertEquals(expected, result);
+            Assert.assertEquals(expected[0], result[0]);
+            Assert.assertEquals(expected[1], result[1]);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

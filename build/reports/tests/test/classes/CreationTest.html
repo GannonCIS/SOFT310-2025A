@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class DeletionTest</title>
+<title>Test results - Class CreationTest</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class DeletionTest</h1>
+<h1>Class CreationTest</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/default-package.html">default-package</a> &gt; DeletionTest</div>
+<a href="../packages/default-package.html">default-package</a> &gt; CreationTest</div>
 <div id="summary">
 <table>
 <tr>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.021s</div>
+<div class="counter">0.051s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,22 +78,22 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testAccCloseFun_UserDoesntWantToDeleteAcc_Types2</td>
+<td class="success">accNoCreation_EmptyFile_Returns1</td>
 <td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testAccCloseFun_UserEntersNumberThatIsNot1_TypesAnyInt</td>
-<td class="success">0.015s</td>
+<td class="success">accNoCreation_NonEmptyFile_ReturnsNextNumber</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testAccCloseFun_UserWantsToDeleteAcc_Types1</td>
-<td class="success">0.002s</td>
+<td class="success">createAccFunTest_Works</td>
+<td class="success">0.044s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testDelLine_FileExists</td>
+<td class="success">credWrite_AppendsCorrectLine</td>
 <td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
@@ -102,20 +102,12 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre id="class-stdout">Are you sure want to delete your account?
-Type 1: Yes
-Type 2: No
-Incorrect! Choose a valid option again.
+<pre id="class-stdout">
+Account created successfully!
 
-Are you sure want to delete your account?
-Type 1: Yes
-Type 2: No
-Are you sure want to delete your account?
-Type 1: Yes
-Type 2: No
-Are you sure want to delete your account?
-Type 1: Yes
-Type 2: No
+Your account number is: 100
+Your password is: password
+
 ┌────────────────────────────┐
 │           Menu:            │
 │                            │

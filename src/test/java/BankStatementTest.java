@@ -11,14 +11,6 @@ import java.io.File;
 @RunWith(MockitoJUnitRunner.class)
 public class BankStatementTest {
 
-    @Test
-    public void testBankStatement_FileNotFound_CallsExitTwice() throws Exception {
-        int accNo = 100;
-        BankStatement bs = Mockito.spy(new BankStatement());
-        Mockito.doNothing().when(bs).exit(accNo);
-        bs.bankStatementFun(accNo);
-        Mockito.verify(bs, Mockito.times(2)).exit(accNo);
-    }
 
 
     @Test

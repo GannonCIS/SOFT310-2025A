@@ -16,22 +16,19 @@ public class BankStatement {
             System.out.println("---------------------------------------------------------------------------");
             while (scanner.hasNextLine()) {
                 String trWLine = scanner.nextLine();
-                if (trWLine.trim().isEmpty()) continue;
                 String[] trLine = trWLine.split(" ");
-                String description = (trLine.length>0?trLine[0]:"") + " " + (trLine.length>1?trLine[1]:"") + " " + (trLine.length>2?trLine[2]:"");
-                String type = trLine.length>3?trLine[3]:"";
-                String amount = (trLine.length>4?"$"+trLine[4]:"");
-                String remarks = trLine.length>5?trLine[5]:"";
-                String date = trLine.length>6?trLine[6]:"";
-                String time = trLine.length>7?trLine[7]:"";
+                String description = trLine[0] + " " + trLine[1] + " " + trLine[2];
+                String type = trLine[3];
+                String amount = "$" + trLine[4];
+                String remarks = trLine[5];
+                String date = trLine[6];
+                String time = trLine[7];
                 System.out.printf("%-21s | %-6s | %-6s | %-7s | %-10s | %-8s%n", description, type, amount, remarks, date, time);
             }
             System.out.println("---------------------------------------------------------------------------");
         } catch (FileNotFoundException e) {
             System.out.println("No Transaction found!");
             exit(accNo);
-        } finally {
-            if (scanner != null) scanner.close();
         }
         exit(accNo);
     }
@@ -41,11 +38,5 @@ public class BankStatement {
         Scanner scanner1 = new Scanner(System.in);
         scanner1.nextLine();
         Main.menu(accNo);
-    }
-
-    // Test helper: returns true if statement file exists and has content
-    public boolean bankStatementFunTest(String stmtFilePath) {
-        File file = new File(stmtFilePath);
-        return file.exists() && file.length() > 0;
     }
 }

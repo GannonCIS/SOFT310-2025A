@@ -10,7 +10,6 @@ class DeletionControlFlowTest {
 
     @BeforeEach
     void setup() throws Exception {
-        // Create a test credentials file with sample accounts
         Files.writeString(Paths.get(TEST_CREDENTIALS),
                 "1001 pass1\n" +
                         "1002 pass2\n" +
@@ -22,34 +21,32 @@ class DeletionControlFlowTest {
         Files.deleteIfExists(Paths.get(TEST_CREDENTIALS));
     }
 
+    private void accCloseFunTest(int accNo, String fileName) throws Exception {
+        Deletion del = new Deletion();
+        del.delLine(accNo, fileName);
+    }
+
     @Test
     void testAccCloseFun_RemovesCorrectAccount() throws Exception {
-        Deletion del = new Deletion();
-
         int accToDelete = 1002;
 
-        del.accCloseFunTest(accToDelete, TEST_CREDENTIALS);
+        accCloseFunTest(accToDelete, TEST_CREDENTIALS);
 
         String content = Files.readString(Paths.get(TEST_CREDENTIALS));
 
-        assertFalse(content.contains("1002"), "File should not contain deleted account");
-        assertTrue(content.contains("1001"), "Other accounts must remain");
-        assertTrue(content.contains("1003"), "Other accounts must remain");
+        assertFalse(content.contains("1002"));
+        assertTrue(content.contains("1001"));
+        assertTrue(content.contains("1003"));
     }
 
     @Test
     void testAccCloseFun_NoCrashIfAccNotFound() throws Exception {
-        Deletion del = new Deletion();
-
-        // Account that does NOT exist
         int accToDelete = 9999;
 
-        // Should not throw an error
         assertDoesNotThrow(() ->
-                del.accCloseFunTest(accToDelete, TEST_CREDENTIALS)
+                accCloseFunTest(accToDelete, TEST_CREDENTIALS)
         );
 
-        // File should remain unchanged
         String content = Files.readString(Paths.get(TEST_CREDENTIALS));
 
         assertTrue(content.contains("1001"));

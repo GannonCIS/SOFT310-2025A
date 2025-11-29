@@ -4,13 +4,18 @@ import java.util.Scanner;
 
 public class AccountDetails {
     void accountDetailsFun(int accNo) throws IOException {
-        String[] detail = accountDetailsFunTest("db/userDB.txt", accNo);
-        if (detail == null) {
-            System.out.println("Account not found!");
-            Main.menu(accNo);
-            return;
+        File file = new File("db/userDB.txt");
+        Scanner scanner = new Scanner(file);
+        String wholeDetail = "";
+        while (scanner.hasNextLine()) {
+            String line = scanner.nextLine();
+            String[] subLine = line.split(" ");
+            if (accNo == Integer.parseInt(subLine[0])) {
+                wholeDetail = line;
+                break;
+            }
         }
-
+        String[] detail = wholeDetail.split(" ");
         System.out.println("Account Details: ");
         System.out.println("┌────────────────────────────────┐");
         System.out.println("  Full Name: "+ detail[1] + " " + detail[2]);
@@ -27,25 +32,5 @@ public class AccountDetails {
         Scanner scanner1 = new Scanner(System.in);
         scanner1.nextLine();
         Main.menu(accNo);
-    }
-
-    // Test helper (reads from a specified file, returns null if not found)
-    public String[] accountDetailsFunTest(String userFilePath, int accNo) throws IOException {
-        File file = new File(userFilePath);
-        if (!file.exists()) return null;
-        Scanner scanner = new Scanner(file);
-        String wholeDetail = null;
-        while (scanner.hasNextLine()) {
-            String line = scanner.nextLine().trim();
-            if (line.isEmpty()) continue;
-            String[] subLine = line.split(" ");
-            if (accNo == Integer.parseInt(subLine[0])) {
-                wholeDetail = line;
-                break;
-            }
-        }
-        scanner.close();
-        if (wholeDetail == null) return null;
-        return wholeDetail.split(" ");
     }
 }

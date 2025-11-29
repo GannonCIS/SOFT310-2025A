@@ -5,19 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b28c7c73-0f39-4193-8c6a-d137d0ab7fe9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_17_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_17_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_5_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/RahmanBank.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/RahmanBank.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/BankSystemTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CreationControlFlowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CreationControlFlowTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ExampleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/InAccNoControlFlowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/InAccNoControlFlowTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LoginControlFlowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/LoginControlFlowTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/credentials.txt" beforeDir="false" afterPath="$PROJECT_DIR$/db/credentials.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BankSystemTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CreationControlFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreationControlFlowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ExampleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InAccNoControlFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InAccNoControlFlowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginControlFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginControlFlowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AccountDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BalanceInquiry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BalanceInquiry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BankStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BankStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Creation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Creation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Deletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Deletion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BalanceInquiryControlFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BalanceInquiryControlFlowTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -77,6 +84,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
     "JUnit.All in RahmanBank.test.executor": "Coverage",
     "JUnit.BalanceInquiryControlFlowTest.executor": "Run",
     "JUnit.BankSystemTest.executor": "Run",
@@ -86,8 +94,12 @@
     "JUnit.DeletionControlFlowTest.executor": "Run",
     "JUnit.InAccNoControlFlowTest.executor": "Coverage",
     "JUnit.LoginControlFlowTest.executor": "Coverage",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -204,8 +216,8 @@
     <SUITE FILE_PATH="coverage/RahmanBank$BalanceInquiryControlFlowTest.ic" NAME="BalanceInquiryControlFlowTest Coverage Results" MODIFIED="1764391028587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/RahmanBank$LoginControlFlowTest.ic" NAME="LoginControlFlowTest Coverage Results" MODIFIED="1764391932529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/RahmanBank$MainTest__1_.ic" NAME="MainTest (1) Coverage Results" MODIFIED="1764267384471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/RahmanBank$All_in_RahmanBank_test.ic" NAME="All in RahmanBank.test Coverage Results" MODIFIED="1764395502742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/RahmanBank$Tests_in__RahmanBank_test_.ic" NAME="Tests in 'RahmanBank.test' Coverage Results" MODIFIED="1764271438473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$All_in_RahmanBank_test.ic" NAME="All in RahmanBank.test Coverage Results" MODIFIED="1764395815824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$Tests_in__RahmanBank_test_.ic" NAME="Tests in 'RahmanBank.test' Coverage Results" MODIFIED="1764396131850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/RahmanBank$DeletionTest.ic" NAME="DeletionTest Coverage Results" MODIFIED="1763925970973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

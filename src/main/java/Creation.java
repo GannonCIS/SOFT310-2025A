@@ -50,7 +50,7 @@ public class Creation {
         System.out.println("Create a Password for your Account: ");
         accLineInfo[8] = scanner.nextLine();
         return accLineInfo;
-        }
+    }
 
     int accNoCreation() throws IOException {
         String lastLine = "";

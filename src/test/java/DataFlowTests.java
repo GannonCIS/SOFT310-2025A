@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.junit.runner.*;
 import org.junit.runners.JUnit4;
 
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -83,43 +84,94 @@ public class DataFlowTests {
     }
     @Test
     public void TestFile_T1_BankStatment(){
-        BankStatement bs = new BankStatement();
-
+        InputStream originalIn = System.in;
+        try {
+            String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
+            ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
+            System.setIn(in);
+            BankStatement bs = new BankStatement();
+            bs.bankStatementFun(1);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
     @Test
     public void TestFile_T1_BalanceInquiry(){
-        BalanceInquiry bi = new BalanceInquiry();
-
+        InputStream originalIn = System.in;
+        try {
+            String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
+            ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
+            System.setIn(in);
+            BalanceInquiry bi = new BalanceInquiry();
+            bi.balanceInquiryFun(1);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
     @Test
     public void TestFile_T1_Login(){
-        Login lo = new Login();
+        InputStream originalIn = System.in;
+        try {
+            String simulatedInput = "6" + System.lineSeparator();
+            ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
+            System.setIn(in);
+            Login lo = new Login();
+            lo.loginAuth(1, "1");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
     @Test
     public void TestFile_T1_Creation(){
-        Creation cr = new Creation();
-
+        try {
+            Creation cr = new Creation();
+            int num = cr.accNoCreation();
+            int expected = 5;
+            Assert.assertEquals(num, expected);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
     @Test
     public void TestFile_T1_Deletion(){
-        Deletion dl = new Deletion();
-
+        try {
+            Deletion dl = new Deletion();
+            dl.delLine(7, "db/userDB.txt");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
     @Test
     public void TestFile_T1_Transaction(){
-        Transaction tr = new Transaction();
-
+        try {
+            Transaction tr = new Transaction();
+            boolean state = tr.rAccCheck(1);
+            boolean expected = true;
+            Assert.assertEquals(expected, state);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
     @Test
     public void TestFile_T2_Transaction(){
-        Transaction tr = new Transaction();
-
+        try {
+            Transaction tr = new Transaction();
+            boolean state = tr.sAccBalCheck(1, 10);
+            boolean expected = true;
+            Assert.assertEquals(expected, state);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
     @Test
     public void TestFile_T3_Transaction(){
-        Transaction tr = new Transaction();
-
+        try {
+            Transaction tr = new Transaction();
+            tr.transaction(1, 2, 10);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     // Tests for the fullnameArr variable across the Creation class

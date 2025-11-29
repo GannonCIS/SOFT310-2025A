@@ -6,6 +6,8 @@ class LoginControlFlowTest {
 
     private static final String TEST_CREDENTIALS = "test_credentials.txt";
 
+
+
     @BeforeEach
     void setup() throws Exception {
         // Create a test credential file
@@ -20,29 +22,26 @@ class LoginControlFlowTest {
     }
 
     @Test
-    void testLoginAuth_ValidCredentials() {
+    void testLoginAuth_ValidCredentials() throws Exception {
         Login login = new Login();
 
-        assertDoesNotThrow(() ->
-                login.loginAuth(1001, "pass123")
-        );
+        boolean result = login.loginAuthTest(TEST_CREDENTIALS, "1001", "pass123");
+        assertTrue(result);
     }
 
     @Test
-    void testLoginAuth_InvalidPassword() {
+    void testLoginAuth_InvalidPassword() throws Exception {
         Login login = new Login();
 
-        assertDoesNotThrow(() ->
-                login.loginAuth(1001, "wrongpass")
-        );
+        boolean result = login.loginAuthTest(TEST_CREDENTIALS, "1001", "wrongpass");
+        assertFalse(result);
     }
 
     @Test
-    void testLoginAuth_AccountNotFound() {
+    void testLoginAuth_AccountNotFound() throws Exception {
         Login login = new Login();
 
-        assertDoesNotThrow(() ->
-                login.loginAuth(9999, "anything")
-        );
+        boolean result = login.loginAuthTest(TEST_CREDENTIALS, "9999", "anything");
+        assertFalse(result);
     }
 }

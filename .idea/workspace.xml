@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b28c7c73-0f39-4193-8c6a-d137d0ab7fe9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BalanceInquiryControlFlowTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DeletionControlFlowTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/InAccNoControlFlowTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LoginControlFlowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mockdb/Bank Statement/acc_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mockdb/Bank Statement/acc_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mockdb/Bank Statement/acc_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mockdb/Bank Statement/acc_2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/BankSystemTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CreationControlFlowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CreationControlFlowTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ExampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/InAccNoControlFlowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/InAccNoControlFlowTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LoginControlFlowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/LoginControlFlowTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/credentials.txt" beforeDir="false" afterPath="$PROJECT_DIR$/db/credentials.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BankSystemTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreationControlFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreationControlFlowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ExampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InAccNoControlFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InAccNoControlFlowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginControlFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginControlFlowTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +29,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="RahmanBank" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -66,9 +77,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.All in RahmanBank.test.executor": "Coverage",
+    "JUnit.BalanceInquiryControlFlowTest.executor": "Run",
     "JUnit.BankSystemTest.executor": "Run",
     "JUnit.BankSystemTest.testAccountDeletion.executor": "Run",
     "JUnit.BankSystemTest.testFundTransfer.executor": "Run",
+    "JUnit.CreationControlFlowTest.executor": "Run",
+    "JUnit.DeletionControlFlowTest.executor": "Run",
+    "JUnit.InAccNoControlFlowTest.executor": "Coverage",
+    "JUnit.LoginControlFlowTest.executor": "Coverage",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -85,7 +102,24 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BankSystemTest.testFundTransfer">
+  <component name="RunManager" selected="JUnit.All in RahmanBank.test">
+    <configuration name="All in RahmanBank.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RahmanBank.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BalanceInquiryControlFlowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RahmanBank.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BalanceInquiryControlFlowTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BankSystemTest.testAccountDeletion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RahmanBank.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -106,8 +140,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginControlFlowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RahmanBank.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginControlFlowTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in RahmanBank.test" />
+        <item itemvalue="JUnit.LoginControlFlowTest" />
+        <item itemvalue="JUnit.BalanceInquiryControlFlowTest" />
         <item itemvalue="JUnit.BankSystemTest.testFundTransfer" />
         <item itemvalue="JUnit.BankSystemTest.testAccountDeletion" />
       </list>
@@ -140,15 +186,26 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="Jenkinsfile" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BalanceInquiryControlFlowTest.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RahmanBank$BankStatementTest.ic" NAME="BankStatementTest Coverage Results" MODIFIED="1763856272381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$DeletionTest_testAccCloseFun_UserWantsToDeleteAcc_Types1.ic" NAME="DeletionTest.testAccCloseFun_UserWantsToDeleteAcc_Types1 Coverage Results" MODIFIED="1763921198353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$InAccNoControlFlowTest.ic" NAME="InAccNoControlFlowTest Coverage Results" MODIFIED="1764395484518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$BalanceInquiryControlFlowTest.ic" NAME="BalanceInquiryControlFlowTest Coverage Results" MODIFIED="1764391028587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$LoginControlFlowTest.ic" NAME="LoginControlFlowTest Coverage Results" MODIFIED="1764391932529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$MainTest__1_.ic" NAME="MainTest (1) Coverage Results" MODIFIED="1764267384471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$All_in_RahmanBank_test.ic" NAME="All in RahmanBank.test Coverage Results" MODIFIED="1764395502742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$Tests_in__RahmanBank_test_.ic" NAME="Tests in 'RahmanBank.test' Coverage Results" MODIFIED="1764271438473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$DeletionTest.ic" NAME="DeletionTest Coverage Results" MODIFIED="1763925970973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

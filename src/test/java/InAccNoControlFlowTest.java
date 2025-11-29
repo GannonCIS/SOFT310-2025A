@@ -22,33 +22,30 @@ public class InAccNoControlFlowTest {
     // CONTROL FLOW CASE 1:
     // Account exists + correct password
     @Test
-    void testLoginAuth_Valid() {
+    void testLoginAuth_Valid() throws Exception {
         Login login = new Login();
 
-        assertDoesNotThrow(() -> {
-            login.loginAuth(1001, "pass123");    // int accNo
-        });
+        boolean result = login.loginAuthTest(TEST_CREDENTIALS, "1001", "pass123");
+        assertTrue(result);
     }
 
     // CONTROL FLOW CASE 2:
     // Account exists + wrong password
     @Test
-    void testLoginAuth_WrongPassword() {
+    void testLoginAuth_WrongPassword() throws Exception{
         Login login = new Login();
 
-        assertDoesNotThrow(() -> {
-            login.loginAuth(1001, "wrong");      // wrong password
-        });
+        boolean result = login.loginAuthTest(TEST_CREDENTIALS, "1001", "wrong");
+        assertFalse(result);
     }
 
     // CONTROL FLOW CASE 3:
     // Account does not exist
     @Test
-    void testLoginAuth_AccountNotFound() {
+    void testLoginAuth_AccountNotFound() throws Exception {
         Login login = new Login();
 
-        assertDoesNotThrow(() -> {
-            login.loginAuth(9999, "nopass");     // nonexistent account
-        });
+        boolean result = login.loginAuthTest(TEST_CREDENTIALS, "9999", "nopass");
+        assertFalse(result);
     }
 }

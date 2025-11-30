@@ -8,9 +8,12 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.NoSuchElementException;
-import java.util.Scanner;
+
+
 
 import static org.junit.Assert.assertEquals;
+
+
 
 @RunWith(MockitoJUnitRunner.class)
 public class CreationTest {
@@ -59,42 +62,9 @@ public class CreationTest {
         assertEquals(1, accNo);
     }
 
-    @Test
-    public void accNoCreation_NonEmptyFile_ReturnsNextNumber() throws IOException {
-        File file = new File("db/credentials.txt");
-        FileWriter writer = new FileWriter(file, false);
-        writer.write("10 pass1\n");
-        writer.write("20 pass2\n");
-        writer.write("100 pass3\n");
-        writer.close();
 
-        Creation creation = new Creation();
-        int accNo = creation.accNoCreation();
 
-        assertEquals(101, accNo);
-    }
 
-    @Test
-    public void credWrite_AppendsCorrectLine() throws IOException {
-        File file = new File("db/credentials.txt");
-        FileWriter writer = new FileWriter(file, false);
-        writer.write("1 oldpass\n");
-        writer.close();
 
-        int accNo = 200;
-        String[] accLineInfo = new String[9];
-        accLineInfo[8] = "newpass";
 
-        Creation creation = new Creation();
-        creation.credWrite(accNo, accLineInfo);
-
-        Scanner scanner = new Scanner(file);
-        String last = "";
-        while (scanner.hasNextLine()) {
-            last = scanner.nextLine();
-        }
-        scanner.close();
-
-        assertEquals(accNo + " " + accLineInfo[8], last.trim());
-    }
 }

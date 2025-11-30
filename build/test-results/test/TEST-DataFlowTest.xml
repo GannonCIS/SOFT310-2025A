@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DataFlowTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:46:11.476Z" hostname="Mac.lan" time="0.032">
+  <properties/>
+  <testcase name="Testdetail_T3_AccountDetails" classname="DataFlowTest" time="0.002"/>
+  <testcase name="TestFile_T1_Deletion" classname="DataFlowTest" time="0.001"/>
+  <testcase name="TestFile_T1_AccountDetails" classname="DataFlowTest" time="0.002"/>
+  <testcase name="TestFile_T3_Transaction" classname="DataFlowTest" time="0.002"/>
+  <testcase name="Testdetail_T2_AccountDetails" classname="DataFlowTest" time="0.001"/>
+  <testcase name="TestfullnameArr_T5_Creation" classname="DataFlowTest" time="0.007"/>
+  <testcase name="TestfullnameArr_T4_Creation" classname="DataFlowTest" time="0.001"/>
+  <testcase name="Testdetail_T1_AccountDetails" classname="DataFlowTest" time="0.001"/>
+  <testcase name="TestfullnameArr_T3_Creation" classname="DataFlowTest" time="0.005"/>
+  <testcase name="TestfullnameArr_T2_Creation" classname="DataFlowTest" time="0.0"/>
+  <testcase name="TestfullnameArr_T1_Creation" classname="DataFlowTest" time="0.001"/>
+  <testcase name="Testdetail_T8_AccountDetails" classname="DataFlowTest" time="0.001"/>
+  <testcase name="Testdetail_T7_AccountDetails" classname="DataFlowTest" time="0.002"/>
+  <testcase name="TestFile_T1_BankStatment" classname="DataFlowTest" time="0.002"/>
+  <testcase name="TestaccBalance_T3_BalanceInquiry" classname="DataFlowTest" time="0.001"/>
+  <testcase name="Testdetail_T6_AccountDetails" classname="DataFlowTest" time="0.0"/>
+  <testcase name="TestaccBalance_T2_BalanceInquiry" classname="DataFlowTest" time="0.001"/>
+  <testcase name="Testdetail_T5_AccountDetails" classname="DataFlowTest" time="0.0"/>
+  <testcase name="Testdetail_T4_AccountDetails" classname="DataFlowTest" time="0.002"/>
+  <system-out><![CDATA[Account Details: 
+┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+└────────────────────────────────┘
+
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+Enter your Name: 
+Please provide both first name and last name.
+Enter your Name: 
+Enter your Name: 
+Please provide both first name and last name.
+Enter your Name: 
+Account Details: 
+┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+└────────────────────────────────┘
+
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+Enter your Name: 
+Enter your Date of Birth (YYYY-MM-DD): 
+Enter your Gender: 
+Enter your Address: 
+Enter your Phone Number: 
+Enter your Email: 
+Enter your Citizenship Number: 
+Create a Password for your Account: 
+Enter your Name: 
+Enter your Date of Birth (YYYY-MM-DD): 
+Enter your Gender: 
+Enter your Address: 
+Enter your Phone Number: 
+Enter your Email: 
+Enter your Citizenship Number: 
+Create a Password for your Account: 
+Enter your Name: 
+Enter your Date of Birth (YYYY-MM-DD): 
+Enter your Gender: 
+Enter your Address: 
+Enter your Phone Number: 
+Enter your Email: 
+Enter your Citizenship Number: 
+Create a Password for your Account: 
+Account Details: 
+┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+└────────────────────────────────┘
+
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+
+
+                           | Bank Statement |
+---------------------------------------------------------------------------
+Description           | Type   | Amount | Remarks | Date       | Time    
+---------------------------------------------------------------------------
+Transfer to 1         | Debit  | $30    | Test    | 2025-11-29 | 19:54:41
+Transfer to 1         | Debit  | $30    | Test    | 2025-11-29 | 19:54:41
+Transfer from 1       | Credit | $30    | Test    | 2025-11-29 | 19:54:41
+Transfer from 1       | Credit | $30    | Test    | 2025-11-29 | 19:54:41
+---------------------------------------------------------------------------
+
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+Account Details: 
+┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+└────────────────────────────────┘
+
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

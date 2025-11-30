@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BankStatementTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-29T17:29:49.842Z" hostname="Mac.lan" time="0.161">
+<testsuite name="BankStatementTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:46:11.222Z" hostname="Mac.lan" time="0.164">
   <properties/>
-  <testcase name="testBankStatement_FileIsEmpty_CallsExitOnce" classname="BankStatementTest" time="0.156"/>
-  <testcase name="testBankStatement_FileIsNotEmpty_CallsExitOnce" classname="BankStatementTest" time="0.004"/>
+  <testcase name="testBankStatement_FileIsEmpty_CallsExitOnce" classname="BankStatementTest" time="0.157"/>
+  <testcase name="testBankStatement_FileIsNotEmpty_CallsExitOnce" classname="BankStatementTest" time="0.006"/>
   <system-out><![CDATA[
 
                            | Bank Statement |

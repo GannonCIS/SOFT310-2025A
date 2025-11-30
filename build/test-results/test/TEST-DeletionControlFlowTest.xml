@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DeletionControlFlowTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:52:16.768Z" hostname="Mac.lan" time="0.008">
+<testsuite name="DeletionControlFlowTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-30T03:41:20.531Z" hostname="Mac.lan" time="0.011">
   <properties/>
-  <testcase name="testAccCloseFun_RemovesCorrectAccount()" classname="DeletionControlFlowTest" time="0.005"/>
+  <testcase name="testAccCloseFun_RemovesCorrectAccount()" classname="DeletionControlFlowTest" time="0.007"/>
   <testcase name="testAccCloseFun_NoCrashIfAccNotFound()" classname="DeletionControlFlowTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="InAccNoControlFlowTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:52:16.777Z" hostname="Mac.lan" time="0.005">
+<testsuite name="InAccNoControlFlowTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-11-30T03:41:20.543Z" hostname="Mac.lan" time="0.004">
   <properties/>
   <testcase name="testLoginAuth_Valid()" classname="InAccNoControlFlowTest" time="0.001"/>
   <testcase name="testLoginAuth_AccountNotFound()" classname="InAccNoControlFlowTest" time="0.001"/>
-  <testcase name="testLoginAuth_WrongPassword()" classname="InAccNoControlFlowTest" time="0.002"/>
+  <testcase name="testLoginAuth_WrongPassword()" classname="InAccNoControlFlowTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

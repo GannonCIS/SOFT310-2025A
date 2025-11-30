@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CreationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:52:17.295Z" hostname="Mac.lan" time="0.024">
+<testsuite name="CreationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-30T03:41:21.384Z" hostname="Mac.lan" time="0.04">
   <properties/>
   <testcase name="accNoCreation_EmptyFile_Returns1" classname="CreationTest" time="0.001"/>
-  <testcase name="createAccFunTest_Works" classname="CreationTest" time="0.023"/>
+  <testcase name="createAccFunTest_Works" classname="CreationTest" time="0.038"/>
   <system-out><![CDATA[
 Account created successfully!
 

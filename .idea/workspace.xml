@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81e4624c-5bde-425e-a8f5-67ddd32b84b8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/9.2.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.2.0/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.2.0/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.2.0/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.2.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.2.0/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.2.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.2.0/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.2.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.2.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.2.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.2.0/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,10 +12,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/9.2.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.2.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/DataFlowTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/DataFlowTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/DataFlowTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/DataFlowTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-DataFlowTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-DataFlowTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/DataFlowTests.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/DataFlowTests.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DataFlowTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DataFlowTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +40,15 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SOFT310-2025A" type="f1a62948:ProjectNode" />
+                <item name="RahmanBank" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -85,10 +94,26 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.DataFlowTests.TestFile_T1_AccountDetails.executor": "Run",
+    "Gradle.DataFlowTests.TestFile_T1_BalanceInquiry.executor": "Run",
+    "Gradle.DataFlowTests.TestFile_T1_BankStatment.executor": "Run",
+    "Gradle.DataFlowTests.TestFile_T1_Creation.executor": "Run",
+    "Gradle.DataFlowTests.TestFile_T1_Deletion.executor": "Run",
+    "Gradle.DataFlowTests.TestFile_T1_Login.executor": "Run",
+    "Gradle.DataFlowTests.TestFile_T1_Transaction.executor": "Run",
+    "Gradle.DataFlowTests.TestFile_T2_Transaction.executor": "Run",
+    "Gradle.DataFlowTests.TestFile_T3_Transaction.executor": "Run",
     "Gradle.DataFlowTests.TestaccBalance_T1_BalanceInquiry.executor": "Run",
+    "Gradle.DataFlowTests.TestfullnameArr_T1_Creation.executor": "Run",
     "Gradle.DataFlowTests.TestfullnameArr_T2_Creation.executor": "Run",
-    "Gradle.DataFlowTests.TesttRemarks_T1_Transaction.executor": "Run",
-    "Gradle.DataFlowTests.executor": "Run",
+    "Gradle.DataFlowTests.TestfullnameArr_T3_Creation.executor": "Run",
+    "Gradle.DataFlowTests.TestfullnameArr_T4_Creation.executor": "Run",
+    "Gradle.DataFlowTests.TesttRemarks_T1_Transaction.executor": "Coverage",
+    "Gradle.DataFlowTests.TesttRemarks_T2_Transaction.executor": "Run",
+    "Gradle.DataFlowTests.TesttRemarks_T3_Transaction.executor": "Run",
+    "Gradle.DataFlowTests.TesttRemarks_T4_Transaction.executor": "Run",
+    "Gradle.DataFlowTests.TesttRemarks_T5_Transaction.executor": "Run",
+    "Gradle.DataFlowTests.executor": "Coverage",
     "Gradle.SOFT310-2025A [:Main.main()].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -97,14 +122,15 @@
     "git-widget-placeholder": "DataFlowTests",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/tbelo/IdeaProjects/commisionMockito",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.DataFlowTests.TestaccBalance_T1_BalanceInquiry">
-    <configuration name="DataFlowTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.DataFlowTests.TestfullnameArr_T4_Creation">
+    <configuration name="DataFlowTests.TestFile_T3_Transaction" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -117,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;DataFlowTests&quot;" />
+            <option value="&quot;DataFlowTests.TestFile_T3_Transaction&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -128,7 +154,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DataFlowTests.TestaccBalance_T1_BalanceInquiry" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DataFlowTests.TestfullnameArr_T1_Creation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -141,7 +167,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;DataFlowTests.TestaccBalance_T1_BalanceInquiry&quot;" />
+            <option value="&quot;DataFlowTests.TestfullnameArr_T1_Creation&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -176,7 +202,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DataFlowTests.TesttRemarks_T1_Transaction" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DataFlowTests.TestfullnameArr_T3_Creation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -189,7 +215,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;DataFlowTests.TesttRemarks_T1_Transaction&quot;" />
+            <option value="&quot;DataFlowTests.TestfullnameArr_T3_Creation&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="DataFlowTests.TestfullnameArr_T4_Creation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;DataFlowTests.TestfullnameArr_T4_Creation&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -213,10 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.DataFlowTests.TestaccBalance_T1_BalanceInquiry" />
-        <item itemvalue="Gradle.DataFlowTests.TesttRemarks_T1_Transaction" />
-        <item itemvalue="Gradle.DataFlowTests" />
+        <item itemvalue="Gradle.DataFlowTests.TestfullnameArr_T4_Creation" />
+        <item itemvalue="Gradle.DataFlowTests.TestfullnameArr_T3_Creation" />
         <item itemvalue="Gradle.DataFlowTests.TestfullnameArr_T2_Creation" />
+        <item itemvalue="Gradle.DataFlowTests.TestfullnameArr_T1_Creation" />
+        <item itemvalue="Gradle.DataFlowTests.TestFile_T3_Transaction" />
       </list>
     </recent_temporary>
   </component>
@@ -230,5 +281,18 @@
       <updated>1763833944225</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RahmanBank$BankStatementTest.ic" NAME="BankStatementTest Coverage Results" MODIFIED="1763856272381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$DeletionTest_testAccCloseFun_UserWantsToDeleteAcc_Types1.ic" NAME="DeletionTest.testAccCloseFun_UserWantsToDeleteAcc_Types1 Coverage Results" MODIFIED="1763921198353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$InAccNoControlFlowTest.ic" NAME="InAccNoControlFlowTest Coverage Results" MODIFIED="1764395484518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$BalanceInquiryControlFlowTest.ic" NAME="BalanceInquiryControlFlowTest Coverage Results" MODIFIED="1764391028587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$DataFlowTests.ic" NAME="DataFlowTests Coverage Results" MODIFIED="1764462036735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$LoginControlFlowTest.ic" NAME="LoginControlFlowTest Coverage Results" MODIFIED="1764391932529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$MainTest__1_.ic" NAME="MainTest (1) Coverage Results" MODIFIED="1764267384471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$All_in_RahmanBank_test.ic" NAME="All in RahmanBank.test Coverage Results" MODIFIED="1764397607967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$Tests_in__RahmanBank_test_.ic" NAME="Tests in 'RahmanBank.test' Coverage Results" MODIFIED="1764437387826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$DataFlowTests_TesttRemarks_T1_Transaction.ic" NAME="DataFlowTests.TesttRemarks_T1_Transaction Coverage Results" MODIFIED="1764461702364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/RahmanBank$DeletionTest.ic" NAME="DeletionTest Coverage Results" MODIFIED="1763925970973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

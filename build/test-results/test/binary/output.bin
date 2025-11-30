@@ -1,15 +1,196 @@
-e┌───────────────────────────────┐
-$  Your current balance is $5000   
-e└───────────────────────────────┘
- Press Enter key to continue...
-\┌────────────────────────────┐
-$│           Menu:            │
-$│                            │
-$│ Type 1: Balance Inquiry    │
-$│ Type 2: Account Details    │
-$│ Type 3: Fund Transfer      │
-$│ Type 4: Bank Statement     │
-$│ Type 5: Account Closure    │
-$│ Type 6: Log out            │
-$│ Type 7: Exit               │
-\└────────────────────────────┘
+Login Successful!!
+
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘
+Logged out successfully!
+d┌───────────────────────────────┐
+&│ Welcome to SawOnGam Bank Ltd. │
+d├───────────────────────────────┤
+&│ Type 1: Login                 │
+&│ Type 2: Create Account        │
+d└───────────────────────────────┘
+Account Details: 
+g┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+g└────────────────────────────────┘
+
+Press Enter key to continue...
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘
+d┌───────────────────────────────┐
+#  Your current balance is $5000   
+d└───────────────────────────────┘
+Press Enter key to continue...
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘
+Enter your Name: 
+.Please provide both first name and last name.
+Enter your Name: 
+Receiver's Account Number: 
+	Amount: 
+
+Remarks: 
+
+
+Enter your Name: 
+.Please provide both first name and last name.
+Enter your Name: 
+Account Details: 
+g┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+g└────────────────────────────────┘
+
+Press Enter key to continue...
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘
+Enter your Name: 
+(Enter your Date of Birth (YYYY-MM-DD): 
+Enter your Gender: 
+Enter your Address: 
+Enter your Phone Number: 
+Enter your Email: 
+ Enter your Citizenship Number: 
+%Create a Password for your Account: 
+Enter your Name: 
+(Enter your Date of Birth (YYYY-MM-DD): 
+Enter your Gender: 
+Enter your Address: 
+Enter your Phone Number: 
+Enter your Email: 
+ Enter your Citizenship Number: 
+%Create a Password for your Account: 
+Enter your Name: 
+(Enter your Date of Birth (YYYY-MM-DD): 
+Enter your Gender: 
+Enter your Address: 
+Enter your Phone Number: 
+Enter your Email: 
+ Enter your Citizenship Number: 
+%Create a Password for your Account: 
+Account Details: 
+g┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+g└────────────────────────────────┘
+
+Press Enter key to continue...
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘
+No Transaction found!
+
+Press Enter key to continue...
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘
+d┌───────────────────────────────┐
+#  Your current balance is $5000   
+d└───────────────────────────────┘
+Press Enter key to continue...
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘
+Account Details: 
+g┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+g└────────────────────────────────┘
+
+Press Enter key to continue...
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘

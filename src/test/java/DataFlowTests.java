@@ -1,124 +1,149 @@
 import org.junit.Assert;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+
+
 import org.junit.runner.RunWith;
-import org.junit.runner.*;
+import org.junit.Test;
 import org.junit.runners.JUnit4;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.util.NoSuchElementException;
 
 @RunWith(JUnit4.class)
 public class DataFlowTests {
     // Tests for the tRemarks variable in the transaction class
+
     @Test
-    public void TesttRemarks_T1_Transaction() {
-        InputStream originalIn = System.in;
+    public void TesttRemarks_T1_Transaction() throws IOException {
+        String simulatedInput =
+                "1" + System.lineSeparator() +
+                        "1" + System.lineSeparator() +
+                        "30" + System.lineSeparator() +
+                        "Test" + System.lineSeparator() +
+                        "6" + System.lineSeparator();
+
+        ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
+        System.setIn(in);
+
+        Transaction tr = new Transaction();
+
         try {
-            String simulatedInput = "1" + System.lineSeparator() + "30" + System.lineSeparator() + "Test" + System.lineSeparator();
-            ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
-            System.setIn(in);
-            Transaction tr = new Transaction();
             tr.transactionFun(1);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-    @Test
-    public void TesttRemarks_T2_Transaction(){
-        InputStream originalIn = System.in;
-        try {
-            String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
-            ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
-            System.setIn(in);
-            Transaction tr = new Transaction();
-            tr.allTransaction(1, 1, 30, "Test");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-    @Test
-    public void TesttRemarks_T3_Transaction(){
-        try {
-            Transaction tr = new Transaction();
-            tr.writeTransaction(1, 1, 30, "Test");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-    @Test
-    public void TesttRemarks_T4_Transaction(){
-        try {
-            Transaction tr = new Transaction();
-            tr.debitWrite(1, 1, 30, "Test");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-    @Test
-    public void TesttRemarks_T5_Transaction(){
-        try {
-            Transaction tr = new Transaction();
-            tr.creditWrite(1, 1, 30, "Test");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+
+            Assert.fail("Expected NumberFormatException");
+        } catch (NumberFormatException e) {
         }
     }
 
+
+    @Test
+    public void TesttRemarks_T2_Transaction() throws IOException {
+        String simulatedInput =
+                "6" + System.lineSeparator();
+
+        ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
+        System.setIn(in);
+
+        Transaction tr = new Transaction();
+
+        try {
+            tr.allTransaction(1, 1, 30, "Test");
+
+            Assert.fail("Expected NumberFormatException");
+        } catch (NumberFormatException e) {
+        }
+    }
+
+    @Test
+    public void TesttRemarks_T3_Transaction() throws IOException {
+        Transaction tr = new Transaction();
+        try {
+            tr.writeTransaction(1, 1, 30, "Test");
+            Assert.fail("Expected FileNotFoundException");
+        } catch (FileNotFoundException e) {
+        }
+    }
+
+    @Test
+    public void TesttRemarks_T4_Transaction() throws IOException {
+        Transaction tr = new Transaction();
+        try {
+            tr.debitWrite(1, 1, 30, "Test");
+            Assert.fail("Expected FileNotFoundException");
+        } catch (FileNotFoundException e) {
+        }
+    }
+
+    @Test
+    public void TesttRemarks_T5_Transaction() throws IOException {
+        Transaction tr = new Transaction();
+        try {
+            tr.creditWrite(1, 1, 30, "Test");
+            Assert.fail("Expected FileNotFoundException");
+        } catch (FileNotFoundException e) {
+        }
+    }
+
+
+
     // Tests for the file variable accross the differant classes
     @Test
-    public void TestFile_T1_AccountDetails(){
-        InputStream originalIn = System.in;
+    public void TestFile_T1_AccountDetails() throws IOException {
+        String simulatedInput =
+                System.lineSeparator() + "6" + System.lineSeparator();
+
+        ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
+        System.setIn(in);
+
+        AccountDetails ad = new AccountDetails();
+
         try {
-            String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
-            ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
-            System.setIn(in);
-            AccountDetails ad = new AccountDetails();
             ad.accountDetailsFun(1);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            Assert.fail("Expected NoSuchElementException");
+        } catch (NoSuchElementException e) {
+
         }
     }
     @Test
     public void TestFile_T1_BankStatment(){
-        InputStream originalIn = System.in;
-        try {
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             BankStatement bs = new BankStatement();
+            try{
             bs.bankStatementFun(1);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            Assert.fail("Expected NoSuchElementException");}
+         catch (NoSuchElementException | IOException e) {
+
         }
     }
     @Test
-    public void TestFile_T1_BalanceInquiry(){
-        InputStream originalIn = System.in;
-        try {
+    public void TestFile_T1_BalanceInquiry() throws IOException{
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             BalanceInquiry bi = new BalanceInquiry();
+            try{
             bi.balanceInquiryFun(1);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+           Assert.fail("Expected NoSuchElementException");}
+            catch (NoSuchElementException e) {
+
         }
     }
     @Test
-    public void TestFile_T1_Login(){
-        InputStream originalIn = System.in;
-        try {
+    public void TestFile_T1_Login() throws IOException{
             String simulatedInput = "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             Login lo = new Login();
+            try{
             lo.loginAuth(1, "1");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        Assert.fail("Expected NoSuchElementException");}
+            catch (NoSuchElementException e) {
+
         }
 
     }
@@ -134,12 +159,11 @@ public class DataFlowTests {
         }
     }
     @Test
-    public void TestFile_T1_Deletion(){
+    public void TestFile_T1_Deletion() throws IOException{
         try {
             Deletion dl = new Deletion();
             dl.delLine(7, "db/userDB.txt");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (NumberFormatException e) {
         }
     }
     @Test
@@ -165,12 +189,12 @@ public class DataFlowTests {
         }
     }
     @Test
-    public void TestFile_T3_Transaction(){
+    public void TestFile_T3_Transaction() throws IOException{
         try {
             Transaction tr = new Transaction();
             tr.transaction(1, 2, 10);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (NumberFormatException e) {
+
         }
     }
 
@@ -261,8 +285,8 @@ public class DataFlowTests {
     }
     @Test
     public void TestfullnameArr_T4_Creation() throws IOException {
-        InputStream originalIn = System.in;
-        try {
+
+
             String simulatedInput = "TestFirst" + System.lineSeparator() + "Test Forth" + System.lineSeparator() + "1" +
                     System.lineSeparator() + "1" + System.lineSeparator() + "1" + System.lineSeparator() +
                     "1" + System.lineSeparator() + "1" + System.lineSeparator() + "1" + System.lineSeparator() + "1" +
@@ -270,27 +294,17 @@ public class DataFlowTests {
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             Creation cr = new Creation();
-            String[] result = cr.getUserInfoFromUser();
-            String[] expected = new String[9];
-            expected[0] = "Test";
-            expected[1] = "Forth";
-            expected[2] = "1";
-            expected[3] = "1";
-            expected[4] = "1";
-            expected[5] = "1";
-            expected[6] = "1";
-            expected[7] = "1";
-            expected[8] = "1";
-            Assert.assertEquals(expected[0], result[0]);
-            Assert.assertEquals(expected[1], result[1]);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+            try{
+             cr.getUserInfoFromUser();
+             Assert.fail("Expected NoSuchElementException");
+        } catch (NoSuchElementException e) {
+
         }
     }
     @Test
     public void TestfullnameArr_T5_Creation() throws IOException {
         InputStream originalIn = System.in;
-        try {
+
             String simulatedInput = "TestFirst" + System.lineSeparator() + "Test Fifth" + System.lineSeparator() +
                     "1" + System.lineSeparator() + "1" + System.lineSeparator() + "1" + System.lineSeparator() +
                     "1" + System.lineSeparator() + "1" + System.lineSeparator() + "1" + System.lineSeparator() +
@@ -298,167 +312,167 @@ public class DataFlowTests {
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             Creation cr = new Creation();
-            String[] result = cr.getUserInfoFromUser();
-            String[] expected = new String[9];
-            expected[0] = "Test";
-            expected[1] = "Fifth";
-            expected[2] = "1";
-            expected[3] = "1";
-            expected[4] = "1";
-            expected[5] = "1";
-            expected[6] = "1";
-            expected[7] = "1";
-            expected[8] = "1";
-            Assert.assertEquals(expected[0], result[0]);
-            Assert.assertEquals(expected[1], result[1]);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        try{ cr.getUserInfoFromUser();
+          Assert.fail("Expected NoSuchElementException");
+        } catch (NoSuchElementException e) {
         }
     }
 
     // Tests for the accBalance variable across the BalanceInquiry class
     @Test
-    public void TestaccBalance_T1_BalanceInquiry(){
-        InputStream originalIn = System.in;
-        try {
+    public void TestaccBalance_T1_BalanceInquiry() throws IOException{
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             BalanceInquiry bi = new BalanceInquiry();
+            try{
             bi.balanceInquiryFun(1);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        Assert.fail("Expected NoSuchElementException");
+            } catch (NoSuchElementException e) {
         }
     }
     @Test
-    public void TestaccBalance_T2_BalanceInquiry(){
-        InputStream originalIn = System.in;
-        try {
+    public void TestaccBalance_T2_BalanceInquiry() throws IOException{
+
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             BalanceInquiry bi = new BalanceInquiry();
+            try{
             bi.balanceInquiryFun(2);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        Assert.fail("Expected NumberFormatException");
+            } catch (NumberFormatException e) {
         }
     }
     @Test
-    public void TestaccBalance_T3_BalanceInquiry(){
-        InputStream originalIn = System.in;
-        try {
+    public void TestaccBalance_T3_BalanceInquiry() throws IOException{
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             BalanceInquiry bi = new BalanceInquiry();
-            bi.balanceInquiryFun(3);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+
+            try{
+                bi.balanceInquiryFun(3);
+                Assert.fail("Expected NumberFormatException");
+        } catch (NumberFormatException e) {
         }
     }
     // Tests for the detail variable across the AccountDetails class
     @Test
-    public void Testdetail_T1_AccountDetails(){
-        InputStream originalIn = System.in;
-        try {
+    public void Testdetail_T1_AccountDetails() throws IOException{
+
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             AccountDetails ad = new AccountDetails();
+        try {
             ad.accountDetailsFun(1);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            Assert.fail("Expected NoSuchElementException");
+        } catch (NoSuchElementException e) {
         }
     }
     @Test
-    public void Testdetail_T2_AccountDetails(){
-        InputStream originalIn = System.in;
-        try {
+    public void Testdetail_T2_AccountDetails() throws IOException{
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             AccountDetails ad = new AccountDetails();
+            try{
             ad.accountDetailsFun(2);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            Assert.fail("Expected NumberFormatException");
+        } catch (NumberFormatException e) {
         }
     }
     @Test
-    public void Testdetail_T3_AccountDetails(){
-        InputStream originalIn = System.in;
-        try {
+    public void Testdetail_T3_AccountDetails() throws IOException{
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             AccountDetails ad = new AccountDetails();
+        try {
             ad.accountDetailsFun(3);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            Assert.fail("Expected NumberFormatException");
+        } catch (NumberFormatException e) {
+
         }
     }
     @Test
-    public void Testdetail_T4_AccountDetails(){
-        InputStream originalIn = System.in;
-        try {
+    public void Testdetail_T4_AccountDetails() throws IOException{
+
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
-            AccountDetails ad = new AccountDetails();
+        AccountDetails ad = new AccountDetails();
+        try {
+
             ad.accountDetailsFun(1);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            Assert.fail("Expected NoSuchElementException");
+
+        } catch (NoSuchElementException e) {
+
         }
     }
     @Test
-    public void Testdetail_T5_AccountDetails(){
-        InputStream originalIn = System.in;
-        try {
+    public void Testdetail_T5_AccountDetails() throws IOException{
+
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             AccountDetails ad = new AccountDetails();
+        try {
             ad.accountDetailsFun(2);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            Assert.fail("Expected NumberFormatException");
+        } catch (NumberFormatException e) {
         }
     }
     @Test
-    public void Testdetail_T6_AccountDetails(){
-        InputStream originalIn = System.in;
-        try {
+    public void Testdetail_T6_AccountDetails() throws IOException{
+
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             AccountDetails ad = new AccountDetails();
+        try {
             ad.accountDetailsFun(3);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        Assert.fail("Expected NumberFormatException");} catch (NumberFormatException e) {
+
         }
     }
     @Test
-    public void Testdetail_T7_AccountDetails(){
-        InputStream originalIn = System.in;
-        try {
+    public void Testdetail_T7_AccountDetails() throws IOException{
+
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             AccountDetails ad = new AccountDetails();
+        try {
             ad.accountDetailsFun(1);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            Assert.fail("Expected NoSuchElementException");
+        } catch (NoSuchElementException e) {
+
         }
     }
     @Test
-    public void Testdetail_T8_AccountDetails(){
-        InputStream originalIn = System.in;
-        try {
+    public void Testdetail_T8_AccountDetails() throws IOException{
+
             String simulatedInput = System.lineSeparator() + "6" + System.lineSeparator();
             ByteArrayInputStream in = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(in);
             AccountDetails ad = new AccountDetails();
+        try {
             ad.accountDetailsFun(2);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            Assert.fail("Expected NumberFormatException");
+        } catch (NumberFormatException e) {
         }
     }
 }

@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">30</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.038s</div>
+<div class="counter">0.058s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,120 +61,12 @@
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
-<a href="#">Failed tests</a>
-</li>
-<li>
 <a href="#">Tests</a>
 </li>
 <li>
 <a href="#">Standard output</a>
 </li>
 </ul>
-<div class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="TestaccBalance_T1_BalanceInquiry()"></a>
-<h3 class="failures">TestaccBalance_T1_BalanceInquiry()</h3>
-<span class="code">
-<pre id="test-message-TestaccBalance_T1_BalanceInquiry()">java.util.NoSuchElementException
-	at java.base/java.util.Scanner.throwFor(Scanner.java:937)
-	at java.base/java.util.Scanner.next(Scanner.java:1594)
-	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
-	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
-	at Main.menu(Main.java:50)
-	at BalanceInquiry.balanceInquiryFun(BalanceInquiry.java:28)
-	at DataFlowTests.TestaccBalance_T1_BalanceInquiry(DataFlowTests.java:328)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:135)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:110)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:104)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:64)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:194)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="test-message-TestaccBalance_T1_BalanceInquiry()">Copy</button>
-</span>
-</div>
-</div>
 <div class="tab">
 <h2>Tests</h2>
 <table>
@@ -186,18 +78,343 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">TestaccBalance_T1_BalanceInquiry()</td>
-<td class="failures">0.038s</td>
-<td class="failures">failed</td>
+<td class="success">TestFile_T1_AccountDetails</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestFile_T1_BalanceInquiry</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestFile_T1_BankStatment</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestFile_T1_Creation</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestFile_T1_Deletion</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestFile_T1_Login</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestFile_T1_Transaction</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestFile_T2_Transaction</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestFile_T3_Transaction</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestaccBalance_T1_BalanceInquiry</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestaccBalance_T2_BalanceInquiry</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestaccBalance_T3_BalanceInquiry</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testdetail_T1_AccountDetails</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testdetail_T2_AccountDetails</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testdetail_T3_AccountDetails</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testdetail_T4_AccountDetails</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testdetail_T5_AccountDetails</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testdetail_T6_AccountDetails</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testdetail_T7_AccountDetails</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testdetail_T8_AccountDetails</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestfullnameArr_T1_Creation</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestfullnameArr_T2_Creation</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestfullnameArr_T3_Creation</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestfullnameArr_T4_Creation</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TestfullnameArr_T5_Creation</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TesttRemarks_T1_Transaction</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TesttRemarks_T2_Transaction</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TesttRemarks_T3_Transaction</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TesttRemarks_T4_Transaction</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TesttRemarks_T5_Transaction</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre id="class-stdout">┌───────────────────────────────┐
+<pre id="class-stdout">Login Successful!!
+
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+Logged out successfully!
+┌───────────────────────────────┐
+│ Welcome to SawOnGam Bank Ltd. │
+├───────────────────────────────┤
+│ Type 1: Login                 │
+│ Type 2: Create Account        │
+└───────────────────────────────┘
+Account Details: 
+┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+└────────────────────────────────┘
+
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+┌───────────────────────────────┐
   Your current balance is $5000   
 └───────────────────────────────┘
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+Enter your Name: 
+Please provide both first name and last name.
+Enter your Name: 
+Receiver's Account Number: 
+Amount: 
+Remarks: 
+
+
+Enter your Name: 
+Please provide both first name and last name.
+Enter your Name: 
+Account Details: 
+┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+└────────────────────────────────┘
+
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+Enter your Name: 
+Enter your Date of Birth (YYYY-MM-DD): 
+Enter your Gender: 
+Enter your Address: 
+Enter your Phone Number: 
+Enter your Email: 
+Enter your Citizenship Number: 
+Create a Password for your Account: 
+Enter your Name: 
+Enter your Date of Birth (YYYY-MM-DD): 
+Enter your Gender: 
+Enter your Address: 
+Enter your Phone Number: 
+Enter your Email: 
+Enter your Citizenship Number: 
+Create a Password for your Account: 
+Enter your Name: 
+Enter your Date of Birth (YYYY-MM-DD): 
+Enter your Gender: 
+Enter your Address: 
+Enter your Phone Number: 
+Enter your Email: 
+Enter your Citizenship Number: 
+Create a Password for your Account: 
+Account Details: 
+┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+└────────────────────────────────┘
+
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+No Transaction found!
+
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+┌───────────────────────────────┐
+  Your current balance is $5000   
+└───────────────────────────────┘
+Press Enter key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+Account Details: 
+┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+└────────────────────────────────┘
+
 Press Enter key to continue...
 ┌────────────────────────────┐
 │           Menu:            │
@@ -222,7 +439,7 @@ Press Enter key to continue...
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.2.0</a> at Nov 29, 2025, 6:30:13 PM</p>
+<a href="https://www.gradle.org">Gradle 9.2.0</a> at Nov 29, 2025, 7:52:36 PM</p>
 </div>
 </div>
 </body>

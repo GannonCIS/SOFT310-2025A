@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CreationControlFlowTest" tests="2" skipped="2" failures="0" errors="0" timestamp="2025-11-30T01:52:16.768Z" hostname="Mac.lan" time="0.0">
+  <properties/>
+  <testcase name="testCreateAccFun_ControlFlow()" classname="CreationControlFlowTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCreateAccFun_NominalFlow()" classname="CreationControlFlowTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

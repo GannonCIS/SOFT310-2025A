@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TransactionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:46:11.533Z" hostname="Mac.lan" time="0.041">
+<testsuite name="TransactionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:52:17.358Z" hostname="Mac.lan" time="0.025">
   <properties/>
-  <testcase name="allTransaction_InvalidReceiver" classname="TransactionTest" time="0.022"/>
-  <testcase name="debitWrite_AppendsDebitEntry" classname="TransactionTest" time="0.008"/>
-  <testcase name="allTransaction_ValidReceiver_ValidBalance" classname="TransactionTest" time="0.002"/>
+  <testcase name="allTransaction_InvalidReceiver" classname="TransactionTest" time="0.014"/>
+  <testcase name="debitWrite_AppendsDebitEntry" classname="TransactionTest" time="0.004"/>
+  <testcase name="allTransaction_ValidReceiver_ValidBalance" classname="TransactionTest" time="0.001"/>
   <testcase name="transactionFun_DelegatesToAllTransaction" classname="TransactionTest" time="0.002"/>
   <testcase name="transaction_UpdatesBalancesCorrectly" classname="TransactionTest" time="0.001"/>
-  <testcase name="rAccCheckAndSAccBalCheck_BranchesCovered" classname="TransactionTest" time="0.002"/>
+  <testcase name="rAccCheckAndSAccBalCheck_BranchesCovered" classname="TransactionTest" time="0.001"/>
   <testcase name="creditWrite_AppendsCreditEntry" classname="TransactionTest" time="0.001"/>
-  <testcase name="allTransaction_ValidReceiver_InvalidBalance" classname="TransactionTest" time="0.001"/>
+  <testcase name="allTransaction_ValidReceiver_InvalidBalance" classname="TransactionTest" time="0.0"/>
   <system-out><![CDATA[Incorrect Account Number!
 Transaction Successful!
 Press any key to continue...

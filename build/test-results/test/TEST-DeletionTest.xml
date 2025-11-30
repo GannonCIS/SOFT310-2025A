@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DeletionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:46:11.508Z" hostname="Mac.lan" time="0.02">
+<testsuite name="DeletionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:52:17.337Z" hostname="Mac.lan" time="0.017">
   <properties/>
-  <testcase name="testAccCloseFun_UserEntersNumberThatIsNot1_TypesAnyInt" classname="DeletionTest" time="0.014"/>
+  <testcase name="testAccCloseFun_UserEntersNumberThatIsNot1_TypesAnyInt" classname="DeletionTest" time="0.011"/>
   <testcase name="testAccCloseFun_UserWantsToDeleteAcc_Types1" classname="DeletionTest" time="0.001"/>
-  <testcase name="testDelLine_FileExists" classname="DeletionTest" time="0.003"/>
-  <testcase name="testAccCloseFun_UserDoesntWantToDeleteAcc_Types2" classname="DeletionTest" time="0.001"/>
+  <testcase name="testDelLine_FileExists" classname="DeletionTest" time="0.002"/>
+  <testcase name="testAccCloseFun_UserDoesntWantToDeleteAcc_Types2" classname="DeletionTest" time="0.002"/>
   <system-out><![CDATA[Are you sure want to delete your account?
 Type 1: Yes
 Type 2: No

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BankStatementTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:46:11.222Z" hostname="Mac.lan" time="0.164">
+  <properties/>
+  <testcase name="testBankStatement_FileIsEmpty_CallsExitOnce" classname="BankStatementTest" time="0.157"/>
+  <testcase name="testBankStatement_FileIsNotEmpty_CallsExitOnce" classname="BankStatementTest" time="0.006"/>
+  <system-out><![CDATA[
+
+                           | Bank Statement |
+---------------------------------------------------------------------------
+Description           | Type   | Amount | Remarks | Date       | Time    
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+
+                           | Bank Statement |
+---------------------------------------------------------------------------
+Description           | Type   | Amount | Remarks | Date       | Time    
+---------------------------------------------------------------------------
+Test Transaction One  | DEBIT  | $100   | OK      | 2025-11-22 | 12:00   
+---------------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

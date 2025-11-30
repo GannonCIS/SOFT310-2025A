@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CreationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:46:11.390Z" hostname="Mac.lan" time="0.086">
+  <properties/>
+  <testcase name="accNoCreation_EmptyFile_Returns1" classname="CreationTest" time="0.046"/>
+  <testcase name="createAccFunTest_Works" classname="CreationTest" time="0.04"/>
+  <system-out><![CDATA[
+Account created successfully!
+
+Your account number is: 100
+Your password is: password
+
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

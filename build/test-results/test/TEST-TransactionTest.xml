@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TransactionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:46:11.533Z" hostname="Mac.lan" time="0.041">
+  <properties/>
+  <testcase name="allTransaction_InvalidReceiver" classname="TransactionTest" time="0.022"/>
+  <testcase name="debitWrite_AppendsDebitEntry" classname="TransactionTest" time="0.008"/>
+  <testcase name="allTransaction_ValidReceiver_ValidBalance" classname="TransactionTest" time="0.002"/>
+  <testcase name="transactionFun_DelegatesToAllTransaction" classname="TransactionTest" time="0.002"/>
+  <testcase name="transaction_UpdatesBalancesCorrectly" classname="TransactionTest" time="0.001"/>
+  <testcase name="rAccCheckAndSAccBalCheck_BranchesCovered" classname="TransactionTest" time="0.002"/>
+  <testcase name="creditWrite_AppendsCreditEntry" classname="TransactionTest" time="0.001"/>
+  <testcase name="allTransaction_ValidReceiver_InvalidBalance" classname="TransactionTest" time="0.001"/>
+  <system-out><![CDATA[Incorrect Account Number!
+Transaction Successful!
+Press any key to continue...
+┌────────────────────────────┐
+│           Menu:            │
+│                            │
+│ Type 1: Balance Inquiry    │
+│ Type 2: Account Details    │
+│ Type 3: Fund Transfer      │
+│ Type 4: Bank Statement     │
+│ Type 5: Account Closure    │
+│ Type 6: Log out            │
+│ Type 7: Exit               │
+└────────────────────────────┘
+Receiver's Account Number: 
+Amount: 
+Remarks: 
+
+
+Insufficient Balance!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

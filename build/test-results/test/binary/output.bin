@@ -1,25 +1,267 @@
-*Are you sure want to delete your account?
-Type 1: Yes
-Type 2: No
-(Incorrect! Choose a valid option again.
-
-*Are you sure want to delete your account?
-Type 1: Yes
-Type 2: No
-*Are you sure want to delete your account?
-Type 1: Yes
-Type 2: No
-*Are you sure want to delete your account?
-Type 1: Yes
-Type 2: No
-[┌────────────────────────────┐
-#│           Menu:            │
-#│                            │
-#│ Type 1: Balance Inquiry    │
-#│ Type 2: Account Details    │
-#│ Type 3: Fund Transfer      │
-#│ Type 4: Bank Statement     │
-#│ Type 5: Account Closure    │
-#│ Type 6: Log out            │
-#│ Type 7: Exit               │
-[└────────────────────────────┘
+
+
+.                           | Bank Statement |
+L---------------------------------------------------------------------------
+JDescription           | Type   | Amount | Remarks | Date       | Time    
+L---------------------------------------------------------------------------
+L---------------------------------------------------------------------------
+
+
+.                           | Bank Statement |
+L---------------------------------------------------------------------------
+JDescription           | Type   | Amount | Remarks | Date       | Time    
+L---------------------------------------------------------------------------
+JTest Transaction One  | DEBIT  | $100   | OK      | 2025-11-22 | 12:00   
+L---------------------------------------------------------------------------
+
+Account created successfully!
+
+Your account number is: 100
+Your password is: password
+
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘
+Account Details: 
+g┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+g└────────────────────────────────┘
+
+Press Enter key to continue...
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘
+Enter your Name: 
+.Please provide both first name and last name.
+Enter your Name: 
+Enter your Name: 
+.Please provide both first name and last name.
+Enter your Name: 
+Account Details: 
+g┌────────────────────────────────┐
+  Full Name: John Doe
+  Account Number: 1
+  Gender: M
+  Address: 123_Main_St
+  Date of Birth: 01/01/1990
+  Phone number: 555-5555
+  Email: john@example.com
+  Identification: ID123
+g└────────────────────────────────┘
+
+Press Enter key to continue...
+[┌────────────────────────────┐
+#│           Menu:            │
+#│                            │
+#│ Type 1: Balance Inquiry    │
+#│ Type 2: Account Details    │
+#│ Type 3: Fund Transfer      │
+#│ Type 4: Bank Statement     │
+#│ Type 5: Account Closure    │
+#│ Type 6: Log out            │
+#│ Type 7: Exit               │
+[└────────────────────────────┘
+Enter your Name: 
+(Enter your Date of Birth (YYYY-MM-DD): 
+Enter your Gender: 
+Enter your Address: 
+Enter your Phone Number: 
+Enter your Email: 
+ Enter your Citizenship Number: 
+%Create a Password for your Account: 
+ Enter your Name: 
+ (Enter your Date of Birth (YYYY-MM-DD): 
+ Enter your Gender: 
+ Enter your Address: 
+ Enter your Phone Number: 
+ Enter your Email: 
+  Enter your Citizenship Number: 
+ %Create a Password for your Account: 
+!Enter your Name: 
+!(Enter your Date of Birth (YYYY-MM-DD): 
+!Enter your Gender: 
+!Enter your Address: 
+!Enter your Phone Number: 
+!Enter your Email: 
+! Enter your Citizenship Number: 
+!%Create a Password for your Account: 
+#Account Details: 
+#g┌────────────────────────────────┐
+#  Full Name: John Doe
+#  Account Number: 1
+#  Gender: M
+#  Address: 123_Main_St
+#  Date of Birth: 01/01/1990
+#  Phone number: 555-5555
+#  Email: john@example.com
+#  Identification: ID123
+#g└────────────────────────────────┘
+#
+#Press Enter key to continue...
+#[┌────────────────────────────┐
+##│           Menu:            │
+##│                            │
+##│ Type 1: Balance Inquiry    │
+##│ Type 2: Account Details    │
+##│ Type 3: Fund Transfer      │
+##│ Type 4: Bank Statement     │
+##│ Type 5: Account Closure    │
+##│ Type 6: Log out            │
+##│ Type 7: Exit               │
+#[└────────────────────────────┘
+$
+$
+$.                           | Bank Statement |
+$L---------------------------------------------------------------------------
+$JDescription           | Type   | Amount | Remarks | Date       | Time    
+$L---------------------------------------------------------------------------
+$JTransfer to 1         | Debit  | $30    | Test    | 2025-11-29 | 19:54:41
+$JTransfer to 1         | Debit  | $30    | Test    | 2025-11-29 | 19:54:41
+$JTransfer from 1       | Credit | $30    | Test    | 2025-11-29 | 19:54:41
+$JTransfer from 1       | Credit | $30    | Test    | 2025-11-29 | 19:54:41
+$L---------------------------------------------------------------------------
+$
+$Press Enter key to continue...
+$[┌────────────────────────────┐
+$#│           Menu:            │
+$#│                            │
+$#│ Type 1: Balance Inquiry    │
+$#│ Type 2: Account Details    │
+$#│ Type 3: Fund Transfer      │
+$#│ Type 4: Bank Statement     │
+$#│ Type 5: Account Closure    │
+$#│ Type 6: Log out            │
+$#│ Type 7: Exit               │
+$[└────────────────────────────┘
+)Account Details: 
+)g┌────────────────────────────────┐
+)  Full Name: John Doe
+)  Account Number: 1
+)  Gender: M
+)  Address: 123_Main_St
+)  Date of Birth: 01/01/1990
+)  Phone number: 555-5555
+)  Email: john@example.com
+)  Identification: ID123
+)g└────────────────────────────────┘
+)
+)Press Enter key to continue...
+)[┌────────────────────────────┐
+)#│           Menu:            │
+)#│                            │
+)#│ Type 1: Balance Inquiry    │
+)#│ Type 2: Account Details    │
+)#│ Type 3: Fund Transfer      │
+)#│ Type 4: Bank Statement     │
+)#│ Type 5: Account Closure    │
+)#│ Type 6: Log out            │
+)#│ Type 7: Exit               │
+)[└────────────────────────────┘
++**Are you sure want to delete your account?
++*Type 1: Yes
++*Type 2: No
++*(Incorrect! Choose a valid option again.
++*
++**Are you sure want to delete your account?
++*Type 1: Yes
++*Type 2: No
++,*Are you sure want to delete your account?
++,Type 1: Yes
++,Type 2: No
++.*Are you sure want to delete your account?
++.Type 1: Yes
++.Type 2: No
++.[┌────────────────────────────┐
++.#│           Menu:            │
++.#│                            │
++.#│ Type 1: Balance Inquiry    │
++.#│ Type 2: Account Details    │
++.#│ Type 3: Fund Transfer      │
++.#│ Type 4: Bank Statement     │
++.#│ Type 5: Account Closure    │
++.#│ Type 6: Log out            │
++.#│ Type 7: Exit               │
++.[└────────────────────────────┘
+0/d┌───────────────────────────────┐
+0/&│ Welcome to SawOnGam Bank Ltd. │
+0/d├───────────────────────────────┤
+0/&│ Type 1: Login                 │
+0/&│ Type 2: Create Account        │
+0/d└───────────────────────────────┘
+0/Enter your Name: 
+01d┌───────────────────────────────┐
+01&│ Welcome to SawOnGam Bank Ltd. │
+01d├───────────────────────────────┤
+01&│ Type 1: Login                 │
+01&│ Type 2: Create Account        │
+01d└───────────────────────────────┘
+01Enter your Account Number: 02d┌───────────────────────────────┐
+02&│ Welcome to SawOnGam Bank Ltd. │
+02d├───────────────────────────────┤
+02&│ Type 1: Login                 │
+02&│ Type 2: Create Account        │
+02d└───────────────────────────────┘
+02(Incorrect! Choose a valid option again.
+02d┌───────────────────────────────┐
+02&│ Welcome to SawOnGam Bank Ltd. │
+02d├───────────────────────────────┤
+02&│ Type 1: Login                 │
+02&│ Type 2: Create Account        │
+02d└───────────────────────────────┘
+03d┌───────────────────────────────┐
+03&│ Welcome to SawOnGam Bank Ltd. │
+03d├───────────────────────────────┤
+03&│ Type 1: Login                 │
+03&│ Type 2: Create Account        │
+03d└───────────────────────────────┘
+03(Incorrect! Choose a valid option again.
+03d┌───────────────────────────────┐
+03&│ Welcome to SawOnGam Bank Ltd. │
+03d├───────────────────────────────┤
+03&│ Type 1: Login                 │
+03&│ Type 2: Create Account        │
+03d└───────────────────────────────┘
+54Incorrect Account Number!
+57Transaction Successful!
+57Press any key to continue...
+57[┌────────────────────────────┐
+57#│           Menu:            │
+57#│                            │
+57#│ Type 1: Balance Inquiry    │
+57#│ Type 2: Account Details    │
+57#│ Type 3: Fund Transfer      │
+57#│ Type 4: Bank Statement     │
+57#│ Type 5: Account Closure    │
+57#│ Type 6: Log out            │
+57#│ Type 7: Exit               │
+57[└────────────────────────────┘
+58Receiver's Account Number: 
+58	Amount: 
+58
+Remarks: 
+58
+58
+5<Insufficient Balance!

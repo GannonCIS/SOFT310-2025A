@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BalanceInquiryControlFlowTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-11-30T01:46:10.501Z" hostname="Mac.lan" time="0.029">
+  <properties/>
+  <testcase name="testBalanceInquiry_AccountFoundZeroBalance()" classname="BalanceInquiryControlFlowTest" time="0.024"/>
+  <testcase name="testBalanceInquiry_AccountNotFound()" classname="BalanceInquiryControlFlowTest" time="0.002"/>
+  <testcase name="testBalanceInquiry_AccountFound()" classname="BalanceInquiryControlFlowTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
